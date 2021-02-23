@@ -1,0 +1,78 @@
+    @import 'variables';
+    //funciones
+    @mixin interior($superior, $inferior) {
+        padding-top: $superior;
+        padding-bottom: $inferior;
+    }
+    
+    @mixin laterales($izquierda, $derecha) {
+        padding-left: $izquierda;
+        padding-right: $derecha;
+    }
+    
+    @mixin margenes($izquierda, $derecha) {
+        margin-left: $izquierda;
+        margin-right: $derecha;
+    }
+    
+    #opinion {
+        background-color: white;
+        #clientes {
+            padding-top: 40px;
+            width: 100%;
+            text-align: center;
+            h2 {
+                @include interior(20px, 10px);
+                text-align: center;
+                color: $color-titulo;
+                border-bottom: 4px solid salmon;
+            }
+            p {
+                color: $color-texto;
+                text-align: center;
+                padding-top: 30px;
+                @include laterales(139px, 100px);
+            }
+        }
+        .layout {
+            display: flex;
+            @include interior(30px, 10px);
+            text-align: justify;
+            .opinion {
+                width: 30%;
+                height: 30%;
+                @include margenes(1.1em, 1em);
+                @include laterales(1em, 1.3em);
+                @include interior(1em, 0.5em);
+                background-color: white;
+                border: 0.5px solid #ccc;
+                h2 {
+                    color: $color-titulo;
+                    font-size: 1.2em;
+                    padding-top: 5px;
+                    @include margenes(5px, 5px);
+                }
+                article {
+                    color: $color-texto;
+                }
+                p {
+                    color: purple;
+                    text-align: right;
+                }
+            }
+        }
+        #miboton {
+            @include interior(3em, 3em);
+            text-align: center;
+            button {
+                @include laterales(5em, 5em);
+                @include interior(0.2em, 0.2em);
+                background-color: purple;
+                border: 0.5px solid purple;
+            }
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }

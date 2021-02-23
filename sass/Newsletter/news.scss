@@ -1,0 +1,62 @@
+#noticias {
+    form {
+        padding-left: 8em;
+        padding-right: 48em;
+    }
+    span {
+        font-weight: bold;
+        color: black;
+    }
+    a {
+        color: black;
+        font-weight: bold;
+    }
+}
+
+//query tablet
+@media only screen and(max-width:768px){
+
+    #labEmail{
+        position: absolute;
+        top:28em;
+    }
+
+    #labPassword{
+        position: absolute;
+        top:34em;
+    }
+
+    #labRep{
+        position: absolute;
+        top:41em;
+    }
+    #clave{
+        margin-top: 2em;
+        padding-right: 30em;
+    }
+    #claveP{
+        margin-top: 5em;
+        padding-right: 30em;
+    }
+    small{
+        position: absolute;
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+    }
+
+    input[type="text"],[type="password"]{
+        margin-top: 2em;
+        padding-right:30em ;
+    }
+
+    .nombre{
+        margin-top: 2em;
+    }
+    #check-one{
+        position: absolute;
+        top:60em;
+        span{
+            position: absolute;
+        }
+    }
+}

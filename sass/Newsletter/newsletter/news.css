@@ -1,0 +1,251 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+/*
+header {
+    width: 100%;
+    display: flex;
+    background-color: $fondo;
+    #logo {
+        width: 25%;
+        img {
+            width: 40%;
+            background-color: white;
+        }
+        p {
+            float: right;
+            line-height: 89px;
+            font-family: $fuente-texto;
+            text-transform: uppercase;
+            padding-right: 1em;
+            @include textoLetra($color-cabecera, 1.3em);
+        }
+    }
+    //menu de la cabecera
+    #menu {
+        line-height: 93px;
+        width: 60%;
+        text-align: right;
+        ul {
+            li {
+                display: inline-block;
+                a {
+                    text-transform: uppercase;
+                    padding: 10px;
+                    text-decoration: none;
+                    @include textoLetra($color-cabecera, 1.2em);
+                }
+            }
+        }
+    }
+}
+*/
+#slider {
+  height: 40%;
+}
+#slider .galeria img {
+  height: 40%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    display: flex;
+    background-color: white;
+    margin-bottom: -8em;
+  }
+  header #logo {
+    margin-top: 3em;
+    width: 35%;
+  }
+  header #logo img {
+    width: 35%;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 1em;
+    position: relative;
+    bottom: 1.5em;
+  }
+  header #logo p {
+    position: relative;
+    left: 1.8em;
+    bottom: 6.3em;
+    font-family: Verdana, Helvetica, Arial;
+    text-transform: uppercase;
+    padding-right: 1em;
+    font-size: 1.1em;
+    color: #0AC9C9;
+  }
+  header #menu {
+    line-height: 104px;
+    width: 60%;
+    text-align: right;
+    position: relative;
+    right: 0.2em;
+  }
+  header #menu ul {
+    width: 111%;
+  }
+  header #menu ul li {
+    display: inline-block;
+  }
+  header #menu ul li a {
+    text-transform: uppercase;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #0AC9C9;
+  }
+}
+#noticias form {
+  padding-left: 8em;
+  padding-right: 48em;
+}
+#noticias span {
+  font-weight: bold;
+  color: black;
+}
+#noticias a {
+  color: black;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  #labEmail {
+    position: absolute;
+    top: 28em;
+  }
+
+  #labPassword {
+    position: absolute;
+    top: 34em;
+  }
+
+  #labRep {
+    position: absolute;
+    top: 41em;
+  }
+
+  #clave {
+    margin-top: 2em;
+    padding-right: 30em;
+  }
+
+  #claveP {
+    margin-top: 5em;
+    padding-right: 30em;
+  }
+
+  small {
+    position: absolute;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+
+  input[type=text], [type=password] {
+    margin-top: 2em;
+    padding-right: 30em;
+  }
+
+  .nombre {
+    margin-top: 2em;
+  }
+
+  #check-one {
+    position: absolute;
+    top: 60em;
+  }
+  #check-one span {
+    position: absolute;
+  }
+}
+#pie {
+  background-color: #61A60E;
+  margin-top: 1.2em;
+  height: 40%;
+}
+#pie .layout {
+  display: flex;
+}
+#pie .layout .mipie {
+  margin: 0 auto;
+}
+#pie .layout .mipie #logito {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-family: Verdana, Tahoma, sans-serif;
+  color: white;
+  text-shadow: 0px 0px 1px white;
+  padding-top: 1em;
+}
+#pie .layout .mipie h2 {
+  text-transform: uppercase;
+  color: white;
+  border-bottom: 0.1em solid white;
+  margin-bottom: 1.1em;
+  padding-top: 1em;
+}
+#pie .layout .mipie p {
+  color: white;
+  margin: 1em;
+}
+#pie .layout .mipie p span img {
+  height: 1em;
+  margin-right: 0.4em;
+}
+#pie .layout .mipie p a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  #pie {
+    background-color: #61A60E;
+    margin-top: 0.2em;
+  }
+  #pie .layout {
+    display: flex;
+  }
+  #pie .layout .mipie {
+    margin: 0 auto;
+  }
+  #pie .layout .mipie #logito {
+    display: none !important;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: white;
+    text-shadow: 0px 0px 1px white;
+    padding-top: 1em;
+  }
+  #pie .layout .mipie h2 {
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 1.1em;
+    padding-top: 1em;
+    font-size: 1.3em;
+    margin-right: 3.1em;
+  }
+  #pie .layout .mipie p {
+    color: white;
+    margin: 1em;
+  }
+  #pie .layout .mipie p span img {
+    height: 1em;
+    margin-right: 0.4em;
+  }
+  #pie .layout .mipie p a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+/*# sourceMappingURL=news.css.map */
